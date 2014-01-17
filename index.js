@@ -4,7 +4,7 @@
 
 var Calendar = require('calendar')
   , Popover = require('popover')
-  , event = require('event')
+  , event = require('event');
 
 /**
  * Expose `Datepicker`.
@@ -25,7 +25,7 @@ function Datepicker(el) {
   this.cal = new Calendar;
   this.cal.addClass('datepicker-calendar');
   event.bind(el, 'click', this.onclick.bind(this));
-}
+};
 
 /**
  * Handle input clicks.
